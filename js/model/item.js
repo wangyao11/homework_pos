@@ -21,4 +21,8 @@ Item.all = function() {
   ];
 }
 
+Item.prototype.printText = function (number, subtotal) {
+  
+  return '';
+};
 module.exports = Item;
