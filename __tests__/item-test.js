@@ -1,4 +1,4 @@
-jest.dontMock('../src/model/item');
+jest.dontMock('../js/model/item');
 
 describe('Item', function() {
 
@@ -23,7 +23,7 @@ describe('Item', function() {
 
       result = Item.all();
 
-      expect(items).toEqual(result);
+      expect(allItems).toEqual(result);
     });
   });
 });
