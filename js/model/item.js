@@ -22,7 +22,8 @@ Item.all = function() {
 }
 
 Item.prototype.printText = function (number, subtotal) {
-  
-  return '';
+
+  return '名称：' + this.name +'，数量：' + number + this.unit +
+         '，单价：' + this.price.toFixed(2) +'(元)，小计：' + subtotal.toFixed(2) + '(元)';
 };
 module.exports = Item;
