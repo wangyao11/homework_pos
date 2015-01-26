@@ -36,7 +36,7 @@ describe('Item', function() {
       var itemTest = new Item('ITEM000000', '可口可乐350ml', '瓶', 3.00, '可口可乐');
       expectResult = '名称：可口可乐350ml，数量：20瓶，单价：3.00(元)，小计：60.00(元)';
 
-      result = itemTest.printText(20, 60.00);
+      result = itemTest.printText(20, 60);
 
 
       expect(expectResult).toBe(result);
