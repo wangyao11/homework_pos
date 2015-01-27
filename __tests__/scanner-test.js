@@ -16,7 +16,7 @@ describe('Scanner', function() {
       var itemTest = new Item('ITEM000000', '可口可乐350ml', '瓶', 3.00, '可口可乐');
       var input = { 'ITEM000000' : 20 };
 
-      var result = Scanner.scan(input);
+      var result = Scanner.scan(input, Item.all());
 
       var expectResult = new CartItem(itemTest, 20);
 
