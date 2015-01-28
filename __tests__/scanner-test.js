@@ -1,7 +1,7 @@
 jest.dontMock('../js/model/cart-item');
 jest.dontMock('../js/model/item');
 jest.dontMock('../js/model/scanner');
-
+jest.dontMock('lodash');
 
 describe('Scanner', function() {
 
