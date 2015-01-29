@@ -30,4 +30,8 @@ Item.prototype.printText = function (number, subtotal) {
 Item.prototype.getPrice = function () {
   return this.price;
 };
+
+Item.prototype.getPromotionPrice = function () {
+  return 0;
+};
 module.exports = Item;
