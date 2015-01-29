@@ -31,7 +31,11 @@ Item.prototype.getPrice = function () {
   return this.price;
 };
 
-Item.prototype.getPromotionPrice = function () {
+Item.prototype.getPromotionMoney = function () {
   return 0;
 };
+
+Item.prototype.cartItemDiscountText = function () {
+  return '';
+}
 module.exports = Item;
