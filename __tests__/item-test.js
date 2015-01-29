@@ -43,7 +43,7 @@ describe('Item', function() {
     });
   });
 
-  describe('#cartItemDiscountText()', function() {
+  describe('#itemDiscountText()', function() {
 
     it('should return correct string', function(){
 
@@ -52,7 +52,7 @@ describe('Item', function() {
       var itemTest = new Item('ITEM000000', '可口可乐350ml', '瓶', 3.00, '可口可乐');
       expectResult = '';
 
-      result = itemTest.cartItemDiscountText();
+      result = itemTest.itemDiscountText();
 
       expect(expectResult).toBe(result);
     });

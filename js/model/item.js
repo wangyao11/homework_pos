@@ -35,7 +35,7 @@ Item.prototype.getPromotionMoney = function () {
   return 0;
 };
 
-Item.prototype.cartItemDiscountText = function () {
+Item.prototype.itemDiscountText = function () {
   return '';
 }
 module.exports = Item;
