@@ -42,4 +42,20 @@ describe('Item', function() {
       expect(expectResult).toBe(result);
     });
   });
+
+  describe('#cartItemDiscountText()', function() {
+
+    it('should return correct string', function(){
+
+      var Item = require('../js/model/item');
+
+      var itemTest = new Item('ITEM000000', '可口可乐350ml', '瓶', 3.00, '可口可乐');
+      expectResult = '';
+
+      result = itemTest.cartItemDiscountText();
+
+      expect(expectResult).toBe(result);
+    });
+  });
+
 });
